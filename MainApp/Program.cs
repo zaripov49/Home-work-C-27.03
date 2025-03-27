@@ -1,4 +1,5 @@
 ﻿using Domain;
+using Infra;
 
 // Computer computer = new Computer(8, 256, "Безпроводная клавиатура");
 // computer.AddRam(8);
@@ -16,4 +17,27 @@
 
 
 
-System.Console.WriteLine(1);
+
+
+// 2
+
+Car car = new Car(4, "Black", 250, 56000);
+car.AddMileage(34000);
+car.MaxKmH(300);
+car.GetInfo();
+
+
+Airplane airplane = new Airplane(2, "White", 450, 200);
+airplane.MaxKmH(500);
+airplane.GetInfo();
+
+
+Train train = new Train(24, "Brown", 200, 100);
+train.MaxKmH(250);
+train.GetInfo();
+
+
+PassengerCar passengerCar = new PassengerCar(4, "Blue", 300, 56000, "Спойлер");
+passengerCar.AddTuning();
+
+CargoCar cargoCar = new CargoCar(12, "Grey", 120, 120000, 1000);
